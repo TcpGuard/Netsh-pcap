@@ -15,7 +15,7 @@ int main()
 
      wstring comm = L"";
     
-     comm.append(L"/k cd C:\\Users\\Administrator\\Desktop\\");
+     comm.append(L"/k cd C:\\Users\\%username%\\Desktop\\");
      comm.append(L" & C:\\Windows\\System32\\pktmon.exe start --etw -c");
      comm.append(L" && exit ");
 
@@ -32,7 +32,7 @@ int main()
      Sleep(10000);
 
      comm = L"";
-     comm.append(L"/k cd C:\\Users\\Administrator\\Desktop\\");
+     comm.append(L"/k cd C:\\Users\\%username%\\Desktop\\");
      comm.append(L" & C:\\Windows\\System32\\pktmon.exe pcapng PktMon.etl -o out.pcapng");
      comm.append(L" && exit ");
 
