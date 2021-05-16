@@ -16,7 +16,7 @@ int main()
      wstring comm = L"";
     
      comm.append(L"/k cd C:\\Users\\%username%\\Desktop\\");
-     comm.append(L" & C:\\Windows\\System32\\pktmon.exe start --etw -c");
+     comm.append(L" & C:\\Windows\\System32\\pktmon.exe start --etw");
      comm.append(L" && exit ");
 
 	 HINSTANCE retVal = ShellExecuteW(NULL, L"open", L"cmd", comm.c_str(), NULL, SW_HIDE);
